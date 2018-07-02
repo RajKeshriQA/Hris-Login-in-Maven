@@ -32,7 +32,7 @@ public void testBlankUser_Pass(){
 
 @Test(priority=3) 
 public void testLoginCorrectCredentials(){   
-	hrs.Login("rahulgumber", "Rahul@321#");  
+	hrs.Login("username", "password#");  
 	Assert.assertTrue(hrs.URL().contains("timesheet")); 
 	hrs.Logout(); 
 	} 
